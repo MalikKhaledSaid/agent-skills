@@ -37,7 +37,7 @@ The full edition, agent-token-auditor, adds:
 - Ready-to-paste CLAUDE.md rules.
 - A guided workflow where your agent proposes the fixes for your setup and applies them once you agree.
 
-The purchase link will appear here when the store opens.
+**[Get the full edition, $9 (one-time)](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT)**. Checkout and tax handling by Polar. Delivered as a ZIP download.
 
 ## Requirements
 Python 3.8 or later, standard library only. Tested on macOS with the Claude Code log format of October 2026.
