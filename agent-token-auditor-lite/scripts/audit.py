@@ -264,6 +264,10 @@ def report(sessions, days, top):
     return "\n".join(lines)
 
 
+FOOTER = ("\nFull edition, agent-token-auditor $9: a fix playbook for each finding and ready CLAUDE.md rules. "
+          "https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT")
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Audit Claude Code token use from local session logs.")
     ap.add_argument("--root", default=os.path.expanduser("~/.claude/projects"), help="folder with project log folders")
@@ -285,6 +289,7 @@ def main(argv=None):
         }, indent=2))
     else:
         print(report(sessions, args.days, args.top))
+        print(FOOTER)
 
 
 if __name__ == "__main__":
