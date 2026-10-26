@@ -19,7 +19,7 @@ Skills in this repo work with any agent that reads SKILL.md. The install line be
 
 All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_0NhKpsS3Zs6kOUrxkurweJd57GdowIOfceWDR2Rq94C) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
 
-Launch code `LAUNCH30` takes 30% off any single pack at checkout: release-gate, agent-team-ops, agent-token-auditor and lessons-log. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. LAUNCH30 applies to single packs; the bundle is already discounted.
+Launch code `LAUNCH30` takes 30% off any single pack at checkout: release-gate, agent-team-ops, agent-token-auditor, lessons-log and numbers-check. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. LAUNCH30 applies to single packs; the bundle is already discounted.
 
 ## Install
 
