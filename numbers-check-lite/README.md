@@ -36,14 +36,14 @@ python3 scripts/numbers_check.py report.md
 A small report:
 
 ```markdown
-# Report
+# Weekly update
 
-Numbers as of 26 Oct 2026 10:30 UTC.
+Numbers as of 26 Oct 2026 09:00 UTC.
 
-- 20 users in the Store [V, Apify Store API].
-- Spend is $3.31 of $5.
-- About 40 users by 8 Nov [I].
-- Rank 12 [V].
+- 120 people signed up this week [V, signup dashboard].
+- Revenue is $840 [V].
+- Churn is about 4% [I, from 5 cancellations out of 120].
+- Support tickets: 37.
 ```
 
 The real output for it:
@@ -53,13 +53,13 @@ The real output for it:
 
 | Level | Check | Detail |
 |---|---|---|
-| ERROR | No label | line 6: $3.31 (+1 more). Add [V], [I], [U] or [X]. |
-| WARN | No source | line 8: 12. A [V] number needs a source. |
+| ERROR | No label | line 8: 37. Add [V], [I], [U] or [X]. |
+| WARN | No source | line 6: $840. A [V] number needs a source. |
 
 ## Fixes
 
-1. No label: Say how you know the number: [V] verified with a source, [I] inferred, [U] unverified, [X] not found.
-2. No source: Add a link, a file name, or a word after the label, like [V, Polar API].
+1. No source: Add a link, a file name, or a word after the label, like [V, Polar API].
+2. No label: Say how you know the number: [V] verified with a source, [I] inferred, [U] unverified, [X] not found.
 ```
 
 ## Full edition
