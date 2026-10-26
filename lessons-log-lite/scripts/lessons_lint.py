@@ -112,7 +112,7 @@ def lint(text, today=None, max_lines=DEFAULT_MAX_LINES, max_bytes=DEFAULT_MAX_BY
             "Rewrite each bullet as '## L1: rule' with Evidence, Date and Review by lines. See references/templates.md.")
         if lines > max_lines or size > max_bytes:
             add(WARN, "File size", f"{lines} lines and {size} bytes; the cap is {max_lines} lines and {max_bytes} bytes.",
-                "Merge bullets that say the same thing and retire the ones nobody needs.")
+                "Merge bullets with the same title and retire the ones nobody needs.")
         if len(found) > max_rules:
             add(WARN, "Rule count", f"{len(found)} bullets; the cap is {max_rules}.", "Retire the weakest first.")
         longest = [b for b in found if len(b["text"]) > MAX_TITLE]
@@ -122,7 +122,7 @@ def lint(text, today=None, max_lines=DEFAULT_MAX_LINES, max_bytes=DEFAULT_MAX_BY
         return out
     if lines > max_lines or size > max_bytes:
         add(WARN, "File size", f"{lines} lines and {size} bytes; the cap is {max_lines} lines and {max_bytes} bytes.",
-            "Retire rules whose review date passed, and merge rules that say the same thing.")
+            "Retire rules whose review date passed, and merge rules with the same title.")
     if len(rules) > max_rules:
         add(WARN, "Rule count", f"{len(rules)} rules; the cap is {max_rules}.", "Retire the weakest rules first.")
     seen_ids, seen_titles = {}, {}
@@ -133,7 +133,7 @@ def lint(text, today=None, max_lines=DEFAULT_MAX_LINES, max_bytes=DEFAULT_MAX_BY
         seen_ids.setdefault(rid, r["line"])
         key = re.sub(r"\W+", " ", r["title"].lower()).strip()
         if key in seen_titles:
-            add(WARN, "Duplicate rule", f"{rid} says the same as {seen_titles[key]}.", "Merge the two rules.")
+            add(WARN, "Duplicate rule", f"{rid} has the same title as {seen_titles[key]}.", "Merge the two rules.")
         seen_titles.setdefault(key, rid)
         if len(r["title"]) > MAX_TITLE:
             add(WARN, "Rule too long", f"{rid}: the rule line is {len(r['title'])} characters; the cap is {MAX_TITLE}.",
@@ -174,9 +174,13 @@ def to_markdown(results):
     order = {ERROR: 0, WARN: 1, INFO: 2}
     for r in sorted(results, key=lambda r: order[r["level"]]):
         lines.append(f"| {r['level']} | {r['check']} | {r['detail'].replace('|', '/')} |")
-    fixes = [r for r in results if r["fix"] and r["level"] != INFO]
+    fixes, seen = [], set()
+    for r in results:
+        if r["fix"] and r["level"] != INFO and r["check"] not in seen:
+            seen.add(r["check"])
+            fixes.append(f"{r['check']}: {r['fix']}")
     if fixes:
-        lines += ["", "## Fixes", ""] + [f"{i}. {r['check']}: {r['fix']}" for i, r in enumerate(fixes, 1)]
+        lines += ["", "## Fixes", ""] + [f"{i}. {t}" for i, t in enumerate(fixes, 1)]
     return "\n".join(lines)
 
 
