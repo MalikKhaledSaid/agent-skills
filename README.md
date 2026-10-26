@@ -1,6 +1,41 @@
 # agent-skills
 
-Free Claude Code skill that shows where your tokens go. It reads your own local session logs and prints a ranked report. No network access.
+Free Claude Code skills for agent work: check a release before you ship it, check the files of an agent team, and see where your tokens go. Each skill has a free edition here and a full edition on Polar. Everything runs locally, with no network access.
+
+Skills in this repo work with any agent that reads SKILL.md. The install line below is for Claude Code.
+
+| Skill | What it does | Edition |
+|---|---|---|
+| [release-gate-lite](release-gate-lite/) | One PASS, HOLD or FAIL verdict before a release: secrets, version, changelog, merge markers, clean tree. | Free, MIT |
+| release-gate | One PASS, HOLD or FAIL verdict before a release. Checks secrets, versions, changelog, debug leftovers, large files, README links, tests and remote status, then your agent reviews the diff and drafts release notes. | [$7 one-time](https://buy.polar.sh/polar_cl_zGKv60a7zfftMDwtEse3Gq4Bsx5Gd5wDiXnm01q51F4) |
+| [agent-team-check-lite](agent-team-check-lite/) | Checks the team files of a group of agent sessions for idle roles, broken reporting lines and template text left in tasks. | Free, MIT |
+| agent-team-ops | Runs several AI agent sessions as one team: creates ORG.md and TEAM_PLAN.md, then checks for idle roles, broken reporting lines and tasks with no purpose. Includes 11 operating rules. | [$12 one-time](https://buy.polar.sh/polar_cl_0RUUUFGvqGayeWXaK1PxhAuQSrHMRDJHEkuoZ0xJOV3) |
+| [agent-token-auditor-lite](agent-token-auditor-lite/) | Reads your local Claude Code logs and shows where your tokens went, with the costly patterns and a fix for each. | Free, MIT |
+| agent-token-auditor (full) | Adds the fix playbook, ready CLAUDE.md rules and a guided workflow that applies the fixes. | [$9 one-time](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT) |
+
+All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_0NhKpsS3Zs6kOUrxkurweJd57GdowIOfceWDR2Rq94C) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
+
+Launch code `LAUNCH30` takes 30% off any single pack at checkout. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. LAUNCH30 applies to single packs; the bundle is already discounted.
+
+## Install
+
+```bash
+npx skills add MalikKhaledSaid/agent-skills
+```
+
+As a Claude Code plugin, from inside Claude Code:
+
+```text
+/plugin install release-gate-lite --marketplace MalikKhaledSaid/agent-skills
+/plugin install agent-team-check-lite --marketplace MalikKhaledSaid/agent-skills
+/plugin install agent-token-auditor-lite --marketplace MalikKhaledSaid/agent-skills
+```
+
+Or copy a skill folder into `~/.claude/skills/`.
+
+## agent-token-auditor: from a usage report to a fix
+
+Tools such as ccusage report how many tokens you used. agent-token-auditor-lite goes one step further: it reads your own local session logs, ranks your sessions by cost, and names the habits behind the spend, with a one-line fix for each. The full edition adds a fix playbook for each pattern, ready CLAUDE.md rules and a guided workflow where your agent applies the fixes.
 
 ![Sample run of agent-token-auditor-lite](docs/demo.gif)
 
@@ -17,37 +52,6 @@ Real run on the author's own multi-agent workload, 26 Oct 2026, last 3 days. Ses
 | Guided workflow where your agent applies the fixes | No | Yes |
 
 [Get the full edition ($9, one-time)](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT)
-
-All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_0NhKpsS3Zs6kOUrxkurweJd57GdowIOfceWDR2Rq94C) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
-
-Launch code `LAUNCH30` takes 30% off any single pack at checkout. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. LAUNCH30 applies to single packs; the bundle is already discounted.
-
-Skills in this repo work with any agent that reads SKILL.md. The install line below is for Claude Code.
-
-| Skill | What it does | Edition |
-|---|---|---|
-| [agent-token-auditor-lite](agent-token-auditor-lite/) | Reads your local Claude Code logs and shows where your tokens went, with the costly patterns and a fix for each. | Free, MIT |
-| [release-gate-lite](release-gate-lite/) | One PASS, HOLD or FAIL verdict before a release: secrets, version, changelog, merge markers, clean tree. | Free, MIT |
-| [agent-team-check-lite](agent-team-check-lite/) | Checks the team files of a group of agent sessions for idle roles, broken reporting lines and template text left in tasks. | Free, MIT |
-| agent-token-auditor (full) | Adds the fix playbook, ready CLAUDE.md rules and a guided workflow that applies the fixes. | [$9 one-time](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT) |
-| release-gate | One PASS, HOLD or FAIL verdict before a release. Checks secrets, versions, changelog, debug leftovers, large files, README links, tests and remote status, then your agent reviews the diff and drafts release notes. | [$7 one-time](https://buy.polar.sh/polar_cl_zGKv60a7zfftMDwtEse3Gq4Bsx5Gd5wDiXnm01q51F4) |
-| agent-team-ops | Runs several AI agent sessions as one team: creates ORG.md and TEAM_PLAN.md, then checks for idle roles, broken reporting lines and tasks with no purpose. Includes 11 operating rules. | [$12 one-time](https://buy.polar.sh/polar_cl_0RUUUFGvqGayeWXaK1PxhAuQSrHMRDJHEkuoZ0xJOV3) |
-
-## Install
-
-```bash
-npx skills add MalikKhaledSaid/agent-skills
-```
-
-As a Claude Code plugin, from inside Claude Code:
-
-```text
-/plugin install agent-token-auditor-lite --marketplace MalikKhaledSaid/agent-skills
-/plugin install release-gate-lite --marketplace MalikKhaledSaid/agent-skills
-/plugin install agent-team-check-lite --marketplace MalikKhaledSaid/agent-skills
-```
-
-Or copy a skill folder into `~/.claude/skills/`.
 
 ## Principles
 - Each skill runs locally and states exactly what it reads.
