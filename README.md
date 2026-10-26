@@ -18,6 +18,8 @@ Real run on the author's own multi-agent workload, 26 Oct 2026, last 3 days. Ses
 
 [Get the full edition ($9, one-time)](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT)
 
+All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_0NhKpsS3Zs6kOUrxkurweJd57GdowIOfceWDR2Rq94C) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
+
 Skills in this repo work with any agent that reads SKILL.md. The install line below is for Claude Code.
 
 | Skill | What it does | Edition |
