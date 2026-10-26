@@ -44,6 +44,21 @@ This is the real output for a fresh template with three roles, before anyone edi
 | WARN | Placeholder task | Research: 1 of 1 open items are template text or name nobody to receive the output. |
 ```
 
+A team with three common mistakes:
+
+```
+# Team check: 2 errors, 1 warnings
+
+| Level | Check | Detail |
+|---|---|---|
+| ERROR | Reporting line | Builder report(s) to unknown 'Reviewer'. |
+| ERROR | One voice to the human | 2 roles talk to the human: Lead, Research. |
+| WARN | Session id | Writer has no session id. |
+| INFO | Plan date | Updated 1 days ago. |
+| INFO | Decision log | Latest entry 1 days ago, 1 dated entries. |
+| INFO | Hand-overs | 1 notes; 0 older than 14 days. |
+```
+
 ## Full edition
 The full edition, agent-team-ops, adds:
 - Set-up in one command: ORG.md, TEAM_PLAN.md, DECISIONS.md and a hand-over folder.
