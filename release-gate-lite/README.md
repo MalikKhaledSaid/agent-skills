@@ -22,6 +22,21 @@ You can also run the script by hand:
 python3 scripts/gate.py .
 ```
 
+## Sample run
+Real run of `python3 scripts/gate.py .` on this repository, 26 Oct 2026. It gives HOLD because the repository has no changelog file.
+
+```text
+# Release gate: HOLD
+
+| Check | Result | Detail |
+|---|---|---|
+| Changelog entry | HOLD | No changelog file. |
+| Clean working tree | PASS | No uncommitted changes. |
+| Secrets in tracked files | PASS | No known secret pattern in 20 tracked files. |
+| Version | INFO | No version field found. |
+| Merge conflict markers | PASS | None in 1 changed file. |
+```
+
 ## What it checks
 - Secrets in tracked files: AWS, GitHub, Slack, Stripe, OpenAI, Anthropic and Google keys, private key blocks, hard-coded passwords and tokens, tracked `.env` and key files.
 - Version agreement across package.json, pyproject.toml, Cargo.toml and similar files.
