@@ -20,6 +20,8 @@ Real run on the author's own multi-agent workload, 26 Oct 2026, last 3 days. Ses
 
 All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_0NhKpsS3Zs6kOUrxkurweJd57GdowIOfceWDR2Rq94C) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
 
+Launch code `LAUNCH30` takes 30% off any single pack at checkout. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. It does not apply to the bundle.
+
 Skills in this repo work with any agent that reads SKILL.md. The install line below is for Claude Code.
 
 | Skill | What it does | Edition |
