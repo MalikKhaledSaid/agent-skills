@@ -9,6 +9,16 @@
       "name": "agent-token-auditor-lite",
       "source": "./agent-token-auditor-lite",
       "description": "Shows where Claude Code tokens went, from your own local session logs. Free edition."
+    },
+    {
+      "name": "release-gate-lite",
+      "source": "./release-gate-lite",
+      "description": "Free pre-release check for a git repository: secrets, version, changelog, merge markers, clean tree. One verdict: PASS, HOLD or FAIL."
+    },
+    {
+      "name": "agent-team-check-lite",
+      "source": "./agent-team-check-lite",
+      "description": "Free health check for a team of agent sessions: roles, reporting lines, queues, plan and decision log."
     }
   ]
 }

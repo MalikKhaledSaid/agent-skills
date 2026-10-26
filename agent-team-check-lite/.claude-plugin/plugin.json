@@ -1,0 +1,15 @@
+{
+  "name": "agent-team-check-lite",
+  "version": "1.0.0",
+  "description": "Free health check for a team of agent sessions: roles, reporting lines, queues, plan and decision log.",
+  "author": {
+    "name": "Malik Said"
+  },
+  "homepage": "https://github.com/MalikKhaledSaid/agent-skills",
+  "repository": "https://github.com/MalikKhaledSaid/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent-skills"
+  ]
+}

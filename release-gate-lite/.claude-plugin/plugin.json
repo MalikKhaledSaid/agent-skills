@@ -1,0 +1,15 @@
+{
+  "name": "release-gate-lite",
+  "version": "1.0.0",
+  "description": "Free pre-release check for a git repository: secrets, version, changelog, merge markers, clean tree. One verdict: PASS, HOLD or FAIL.",
+  "author": {
+    "name": "Malik Said"
+  },
+  "homepage": "https://github.com/MalikKhaledSaid/agent-skills",
+  "repository": "https://github.com/MalikKhaledSaid/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent-skills"
+  ]
+}
