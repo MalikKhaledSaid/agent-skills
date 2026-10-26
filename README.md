@@ -41,7 +41,7 @@ Tools such as ccusage report how many tokens you used. agent-token-auditor-lite 
 
 Real run on the author's own multi-agent workload, 26 Oct 2026, last 3 days. Session names replaced. Weighted tokens: 301.6M over 57 sessions. 64% came from turns above 150k context. 27% ran inside subagents. 41 tool results were longer than 20,000 characters.
 
-## Free and full edition
+### agent-token-auditor: free and full edition
 
 | | Free: agent-token-auditor-lite | Full: agent-token-auditor, $9 |
 |---|---|---|
