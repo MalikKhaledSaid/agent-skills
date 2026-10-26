@@ -1,6 +1,24 @@
 # agent-skills
 
-Practical skills for Claude Code and other agents that use the Agent Skills format (SKILL.md).
+Free Claude Code skill that shows where your tokens go. It reads your own local session logs and prints a ranked report. No network access.
+
+![Sample run of agent-token-auditor-lite](docs/demo.gif)
+
+Real run on the author's own multi-agent workload, 26 Oct 2026, last 3 days. Session names replaced. Weighted tokens: 301.6M over 57 sessions. 64% came from turns above 150k context. 27% ran inside subagents. 41 tool results were longer than 20,000 characters.
+
+## Free and full edition
+
+| | Free: agent-token-auditor-lite | Full: agent-token-auditor, $9 |
+|---|---|---|
+| Token report by session, day and model | Yes | Yes |
+| Costly patterns, each with a one-line fix | Yes | Yes |
+| Fix playbook for each finding | No | Yes |
+| Ready-to-paste CLAUDE.md rules | No | Yes |
+| Guided workflow where your agent applies the fixes | No | Yes |
+
+[Get the full edition ($9, one-time)](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT)
+
+Skills in this repo work with any agent that reads SKILL.md. The install line below is for Claude Code.
 
 | Skill | What it does | Edition |
 |---|---|---|
