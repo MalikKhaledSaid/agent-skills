@@ -1,0 +1,15 @@
+{
+  "name": "numbers-check-lite",
+  "version": "1.0.0",
+  "description": "Free check that every number in a report has a label, a source and a time.",
+  "author": {
+    "name": "Malik Said"
+  },
+  "homepage": "https://github.com/MalikKhaledSaid/agent-skills",
+  "repository": "https://github.com/MalikKhaledSaid/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent-skills"
+  ]
+}

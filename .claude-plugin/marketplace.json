@@ -24,6 +24,11 @@
       "name": "lessons-log-lite",
       "source": "./lessons-log-lite",
       "description": "Free check for a LESSONS.md file of standing rules: evidence, review dates, rules with the same title, file size."
+    },
+    {
+      "name": "numbers-check-lite",
+      "source": "./numbers-check-lite",
+      "description": "Free check that every number in a report has a label, a source and a time."
     }
   ]
 }

@@ -14,6 +14,8 @@ Skills in this repo work with any agent that reads SKILL.md. The install line be
 | agent-token-auditor (full) | Adds the fix playbook, ready CLAUDE.md rules and a guided workflow that applies the fixes. | [$9 one-time](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT) |
 | [lessons-log-lite](lessons-log-lite/) | Checks a LESSONS.md file of standing rules: rules with no evidence, review dates that passed, rules with the same title, a file that grew too big. | Free, MIT |
 | lessons-log | Turns an incident into one short standing rule with evidence and a review date. Adds rules, renews and archives overdue ones, converts a file of plain bullets, with a fix guide and a before-and-after check. | [$7 one-time](https://buy.polar.sh/polar_cl_Kh5u3AuxemqQUYOrHAhyxVtoHx8xcgWQvDvzU1SuEPo) |
+| [numbers-check-lite](numbers-check-lite/) | Checks that every number in a Markdown report has a label (verified, inferred, unverified or not found), a source and a time. | Free, MIT |
+| numbers-check | Labels, sources and times for every number in a report, then re-checks the numbers that change with a command you list (MATCH or DIFFERENT). Fix guide and before-and-after check. | [$9 one-time](https://buy.polar.sh/polar_cl_Ls5Jzr8nGz1CyxFFYtIKXRYPlFC9ZGks6mqeL1s1ujI) |
 
 All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_0NhKpsS3Zs6kOUrxkurweJd57GdowIOfceWDR2Rq94C) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
 
@@ -32,6 +34,7 @@ As a Claude Code plugin, from inside Claude Code:
 /plugin install agent-team-check-lite --marketplace MalikKhaledSaid/agent-skills
 /plugin install agent-token-auditor-lite --marketplace MalikKhaledSaid/agent-skills
 /plugin install lessons-log-lite --marketplace MalikKhaledSaid/agent-skills
+/plugin install numbers-check-lite --marketplace MalikKhaledSaid/agent-skills
 ```
 
 Or copy a skill folder into `~/.claude/skills/`.
