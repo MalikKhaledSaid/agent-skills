@@ -1,6 +1,6 @@
 ---
 name: agent-token-auditor-lite
-description: Free token audit for Claude Code. Reads the user's own local session logs and reports tokens by session, day and model, then names the costly patterns (long sessions, subagent fan-out, cache rebuilds, large tool outputs, one model for everything) with a one-line fix each. Use when the user hits usage limits or asks where their Claude Code tokens or usage went.
+description: Free token audit for Claude Code. Reads the user's own local session logs and reports tokens by session, day and model, then names the costly patterns (long sessions, subagent fan-out, cache rebuilds, large tool outputs, one model for everything) with a one-line fix each. Use when the user hits usage limits or asks where their Claude Code tokens or usage went. Search words: Claude Code token usage, usage limit, rate limit, token cost, context window, session cost report.
 license: MIT. LICENSE has complete terms.
 compatibility: Designed for Claude Code. Needs python3 (3.8+) and read access to ~/.claude/projects. No network access.
 metadata:

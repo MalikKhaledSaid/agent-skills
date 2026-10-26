@@ -1,6 +1,6 @@
 ---
 name: release-gate-lite
-description: Free pre-release check for a git repository. Gives one verdict, PASS, HOLD or FAIL, from checks for leaked secrets in tracked files, version agreement across manifest files, version bump since the last tag, a changelog entry, merge conflict markers and a clean working tree. Use before tagging or publishing a release, or when the user asks "is this ready to ship" or "check before release".
+description: Free pre-release check for a git repository. Gives one verdict, PASS, HOLD or FAIL, from checks for leaked secrets in tracked files, version agreement across manifest files, version bump since the last tag, a changelog entry, merge conflict markers and a clean working tree. Use before tagging or publishing a release, or when the user asks "is this ready to ship" or "check before release". Search words: pre-release check, release checklist, pre-publish check, secret scan, version bump check, changelog check, ship check.
 license: MIT. LICENSE has complete terms.
 compatibility: Needs python3 (3.8+) and git. Works with Claude Code and other agents that run shell commands. No network access.
 metadata:

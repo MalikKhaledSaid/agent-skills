@@ -1,6 +1,6 @@
 ---
 name: agent-team-check-lite
-description: Free health check for a team of AI agent sessions that share ORG.md, TEAM_PLAN.md and DECISIONS.md. Finds a role that has no queue, a broken reporting line, more than one voice to the human, tasks with no goal or receiver, template text left in the plan, a stale plan or decision log, and missing session ids. Use when the user runs several Claude Code sessions as a team and asks whether the team files are healthy.
+description: Free health check for a team of AI agent sessions that share ORG.md, TEAM_PLAN.md and DECISIONS.md. Finds a role that has no queue, a broken reporting line, more than one voice to the human, tasks with no goal or receiver, template text left in the plan, a stale plan or decision log, and missing session ids. Use when the user runs several Claude Code sessions as a team and asks whether the team files are healthy. Search words: agent team setup, multi-agent team, agent org chart, team plan check, decision log, agent handoff, parallel Claude Code sessions.
 license: MIT. LICENSE has complete terms.
 compatibility: Designed for Claude Code with several sessions; works with any agent that reads files. Needs python3 (3.8+). No network access.
 metadata:
