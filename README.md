@@ -12,10 +12,12 @@ Skills in this repo work with any agent that reads SKILL.md. The install line be
 | agent-team-ops | Runs several AI agent sessions as one team: creates ORG.md and TEAM_PLAN.md, then checks for idle roles, broken reporting lines and tasks with no purpose. Includes 11 operating rules. | [$12 one-time](https://buy.polar.sh/polar_cl_0RUUUFGvqGayeWXaK1PxhAuQSrHMRDJHEkuoZ0xJOV3) |
 | [agent-token-auditor-lite](agent-token-auditor-lite/) | Reads your local Claude Code logs and shows where your tokens went, with the costly patterns and a fix for each. | Free, MIT |
 | agent-token-auditor (full) | Adds the fix playbook, ready CLAUDE.md rules and a guided workflow that applies the fixes. | [$9 one-time](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT) |
+| [lessons-log-lite](lessons-log-lite/) | Checks a LESSONS.md file of standing rules: rules with no evidence, review dates that passed, rules with the same title, a file that grew too big. | Free, MIT |
+| lessons-log | Turns an incident into one short standing rule with evidence and a review date. Adds rules, renews and archives overdue ones, converts a file of plain bullets, with a fix guide and a before-and-after check. | [$7 one-time](https://buy.polar.sh/polar_cl_Kh5u3AuxemqQUYOrHAhyxVtoHx8xcgWQvDvzU1SuEPo) |
 
 All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_0NhKpsS3Zs6kOUrxkurweJd57GdowIOfceWDR2Rq94C) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
 
-Launch code `LAUNCH30` takes 30% off any single pack at checkout. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. LAUNCH30 applies to single packs; the bundle is already discounted.
+Launch code `LAUNCH30` takes 30% off release-gate, agent-team-ops and agent-token-auditor at checkout. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. LAUNCH30 applies to single packs; the bundle is already discounted.
 
 ## Install
 
@@ -29,6 +31,7 @@ As a Claude Code plugin, from inside Claude Code:
 /plugin install release-gate-lite --marketplace MalikKhaledSaid/agent-skills
 /plugin install agent-team-check-lite --marketplace MalikKhaledSaid/agent-skills
 /plugin install agent-token-auditor-lite --marketplace MalikKhaledSaid/agent-skills
+/plugin install lessons-log-lite --marketplace MalikKhaledSaid/agent-skills
 ```
 
 Or copy a skill folder into `~/.claude/skills/`.

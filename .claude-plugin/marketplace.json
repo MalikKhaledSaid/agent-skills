@@ -19,6 +19,11 @@
       "name": "agent-team-check-lite",
       "source": "./agent-team-check-lite",
       "description": "Free health check for a team of agent sessions: roles, reporting lines, queues, plan and decision log."
+    },
+    {
+      "name": "lessons-log-lite",
+      "source": "./lessons-log-lite",
+      "description": "Free check for a LESSONS.md file of standing rules: evidence, review dates, rules with the same title, file size."
     }
   ]
 }
