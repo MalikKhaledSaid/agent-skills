@@ -4,7 +4,7 @@ description: Free check that every number in a Markdown report has a label (veri
 license: MIT. LICENSE has complete terms.
 compatibility: Designed for Claude Code; works with any agent that reads files. Needs python3 (3.8+). No network access.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   edition: "free"
 ---
 

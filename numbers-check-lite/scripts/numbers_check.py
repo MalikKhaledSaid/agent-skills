@@ -36,7 +36,7 @@ IGNORE_PATTERNS = [
     re.compile(r"\b(?:L|T|P|S|R|Q)\d+\b"),                    # rule, task and row ids such as L12, T3
     re.compile(r"\b(?:run|issue|pr|#)\s*#?\d{6,}\b", re.I),   # run and issue ids
 ]
-NUMBER = re.compile(r"(?<![\w.])[$€£]?\d[\d,]*(?:\.\d+)?%?(?![\w])")
+NUMBER = re.compile(r"(?<![\w.])[$€£]?\d[\d,]*(?:\.\d+)?(?:[eE][+-]?\d+)?%?(?![\w])")
 LIST_NUM = re.compile(r"^\s*(?:[-*]\s+)?\d+[.)]\s")
 HEADING_NUM = re.compile(r"^#+\s*\d+[.)]?\s")
 

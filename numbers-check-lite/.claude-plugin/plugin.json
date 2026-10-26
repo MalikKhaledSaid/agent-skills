@@ -1,6 +1,6 @@
 {
   "name": "numbers-check-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Free check that every number in a report has a label, a source and a time.",
   "author": {
     "name": "Malik Said"
