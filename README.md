@@ -15,6 +15,12 @@ Practical skills for Claude Code and other agents that use the Agent Skills form
 npx skills add MalikKhaledSaid/agent-skills
 ```
 
+As a Claude Code plugin, from inside Claude Code:
+
+```text
+/plugin install agent-token-auditor-lite --marketplace MalikKhaledSaid/agent-skills
+```
+
 Or copy a skill folder into `~/.claude/skills/`.
 
 ## Principles

@@ -1,0 +1,14 @@
+{
+  "name": "saidworks-skills",
+  "description": "Free Claude Code skills for token audits, release checks and agent team health.",
+  "owner": {
+    "name": "Malik Said"
+  },
+  "plugins": [
+    {
+      "name": "agent-token-auditor-lite",
+      "source": "./agent-token-auditor-lite",
+      "description": "Shows where Claude Code tokens went, from your own local session logs. Free edition."
+    }
+  ]
+}

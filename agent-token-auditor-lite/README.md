@@ -10,6 +10,12 @@ This skill reads your own local Claude Code session logs. It ranks your sessions
 npx skills add MalikKhaledSaid/agent-skills
 ```
 
+As a Claude Code plugin, from inside Claude Code:
+
+```text
+/plugin install agent-token-auditor-lite --marketplace MalikKhaledSaid/agent-skills
+```
+
 Or copy this folder into `~/.claude/skills/` (personal) or `.claude/skills/` in a project. Then ask your agent: "Audit my token use for the last 7 days."
 
 You can also run the script by hand:
