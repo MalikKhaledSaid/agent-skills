@@ -1,0 +1,15 @@
+{
+  "name": "research-brief-lite",
+  "version": "1.0.0",
+  "description": "Free check for a research brief: one question, a search budget, a stop rule and a label on every claim.",
+  "author": {
+    "name": "Malik Said"
+  },
+  "homepage": "https://github.com/MalikKhaledSaid/agent-skills",
+  "repository": "https://github.com/MalikKhaledSaid/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent-skills"
+  ]
+}

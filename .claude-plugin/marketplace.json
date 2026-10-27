@@ -29,6 +29,11 @@
       "name": "numbers-check-lite",
       "source": "./numbers-check-lite",
       "description": "Free check that every number in a report has a label, a source and a time."
+    },
+    {
+      "name": "research-brief-lite",
+      "source": "./research-brief-lite",
+      "description": "Free check for a research brief: question, search budget, stop rule, a label on every claim, sources and dates."
     }
   ]
 }

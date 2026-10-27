@@ -16,10 +16,12 @@ Skills in this repo work with any agent that reads SKILL.md. The install line be
 | lessons-log | Turns an incident into one short standing rule with evidence and a review date. Adds rules, renews and archives overdue ones, converts a file of plain bullets, with a fix guide and a before-and-after check. | [$7 one-time](https://buy.polar.sh/polar_cl_Kh5u3AuxemqQUYOrHAhyxVtoHx8xcgWQvDvzU1SuEPo) |
 | [numbers-check-lite](numbers-check-lite/) | Checks that every number in a Markdown report has a label (verified, inferred, unverified or not found), a source and a time. | Free, MIT |
 | numbers-check | Labels, sources and times for every number in a report, then re-checks the numbers that change with a command you list (MATCH or DIFFERENT). Fix guide and before-and-after check. | [$9 one-time](https://buy.polar.sh/polar_cl_Ls5Jzr8nGz1CyxFFYtIKXRYPlFC9ZGks6mqeL1s1ujI) |
+| [research-brief-lite](research-brief-lite/) | Checks a research brief: a question, a search budget, a stop rule, a label on every claim, a source and a date on every verified claim. | Free, MIT |
+| research-brief | Sets the question, the search budget and the stop rule before the first search, logs each search and read, and refuses the next one when the budget is spent. Fix guide and before-and-after check. | [$9 one-time](https://buy.polar.sh/polar_cl_c3IMazGk7ocx6JpKwmUcGP8WPms58i1pAnAbz2QTI43) |
 
 All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_0NhKpsS3Zs6kOUrxkurweJd57GdowIOfceWDR2Rq94C) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
 
-Launch code `LAUNCH30` takes 30% off any single pack at checkout: release-gate, agent-team-ops, agent-token-auditor, lessons-log and numbers-check. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. LAUNCH30 applies to single packs; the bundle is already discounted.
+Launch code `LAUNCH30` takes 30% off any single pack at checkout: release-gate, agent-team-ops, agent-token-auditor, lessons-log, numbers-check and research-brief. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. LAUNCH30 applies to single packs; the bundle is already discounted.
 
 ## Install
 
@@ -35,6 +37,7 @@ As a Claude Code plugin, from inside Claude Code:
 /plugin install agent-token-auditor-lite --marketplace MalikKhaledSaid/agent-skills
 /plugin install lessons-log-lite --marketplace MalikKhaledSaid/agent-skills
 /plugin install numbers-check-lite --marketplace MalikKhaledSaid/agent-skills
+/plugin install research-brief-lite --marketplace MalikKhaledSaid/agent-skills
 ```
 
 Or copy a skill folder into `~/.claude/skills/`.
