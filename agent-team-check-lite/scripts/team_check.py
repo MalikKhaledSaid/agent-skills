@@ -198,7 +198,7 @@ def check(folder, today=None, stale_days=7, human=""):
             m = DATE.search(f)
             if m and (days_old(m.group(1), today) or 0) > stale_days * 2:
                 old.append(f)
-        add(INFO, "Hand-overs", f"{len(notes)} notes; {len(old)} older than {stale_days * 2} days.",
+        add(INFO, "Hand-overs", f"{len(notes)} notes; {len(old)} older than {stale_days * 2} days (twice --stale-days).",
             "Move used hand-overs to an archive folder." if old else "")
     return out
 
@@ -210,9 +210,13 @@ def to_markdown(results):
     order = {ERROR: 0, WARN: 1, INFO: 2}
     for r in sorted(results, key=lambda r: order[r["level"]]):
         lines.append(f"| {r['level']} | {r['check']} | {r['detail'].replace('|', '/')} |")
-    fixes = [r for r in results if r["fix"] and r["level"] != INFO]
+    fixes, seen = [], set()
+    for r in results:
+        if r["fix"] and r["level"] != INFO and r["check"] not in seen:
+            seen.add(r["check"])
+            fixes.append(f"{r['check']}: {r['fix']}")
     if fixes:
-        lines += ["", "## Fixes", ""] + [f"{i}. {r['check']}: {r['fix']}" for i, r in enumerate(fixes, 1)]
+        lines += ["", "## Fixes", ""] + [f"{i}. {t}" for i, t in enumerate(fixes, 1)]
     return "\n".join(lines)
 
 

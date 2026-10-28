@@ -194,6 +194,9 @@ def check_version(g, last_tag):
     listing = ", ".join(f"{k}={v}" for k, v in versions.items())
     if len(distinct) > 1:
         g.add("Version matches everywhere", FAIL, f"Versions disagree: {listing}.", "Set one version in every file.")
+        if last_tag:
+            g.add("Version bumped since last tag", HOLD, f"Cannot compare with tag {last_tag} until the versions agree.",
+                  "Set one version in every file, then bump it above the last tag.")
         return None
     version = distinct[0]
     g.add("Version matches everywhere", PASS, listing)
@@ -276,15 +279,24 @@ def run_gate(repo, run_tests=False, history=False):
     check_tree(g, tracked)
     check_secrets(g, tracked)
     version = check_version(g, last_tag)
+    versions = find_versions(top)
     check_changelog(g, version)
     check_leftovers(g, files, scope)
-    return {"repo": top, "last_tag": last_tag, "version": version, "verdict": g.verdict(), "checks": g.results}
+    return {"repo": top, "last_tag": last_tag, "version": version, "versions": versions, "verdict": g.verdict(), "checks": g.results}
+
+
+def version_text(res):
+    if res["version"]:
+        return res["version"]
+    if res.get("versions"):
+        return "disagree (" + ", ".join(f"{k}={v}" for k, v in res["versions"].items()) + ")"
+    return "not found"
 
 
 def to_markdown(res):
     lines = [f"# Release gate: {res['verdict']}", "",
              f"- Repository: `{os.path.basename(res['repo'])}`",
-             f"- Version: {res['version'] or 'not found'}. Last tag: {res['last_tag'] or 'none'}.", "",
+             f"- Version: {version_text(res)}. Last tag: {res['last_tag'] or 'none'}.", "",
              "| Check | Result | Detail |", "|---|---|---|"]
     order = sorted(res["checks"], key=lambda r: -RANK[r["status"]])
     for r in order:
