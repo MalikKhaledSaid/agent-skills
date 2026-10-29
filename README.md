@@ -19,7 +19,7 @@ Skills in this repo work with any agent that reads SKILL.md. The install line be
 | [research-brief-lite](research-brief-lite/) | Checks a research brief: a question, a search budget, a stop rule, a label on every claim, a source and a date on every verified claim. | Free, MIT |
 | research-brief | Sets the question, the search budget and the stop rule before the first search, logs each search and read, and refuses the next one when the budget is spent. Fix guide and before-and-after check. | [$9 one-time](https://buy.polar.sh/polar_cl_c3IMazGk7ocx6JpKwmUcGP8WPms58i1pAnAbz2QTI43) |
 
-All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_0NhKpsS3Zs6kOUrxkurweJd57GdowIOfceWDR2Rq94C) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
+All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_8cJJ0eGKS6PHoRdUnaG8gmtfdKR5tpiC6P6y02oZMTC) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
 
 Launch code `LAUNCH30` takes 30% off any single pack at checkout: release-gate, agent-team-ops, agent-token-auditor, lessons-log, numbers-check and research-brief. It ends 8 Nov 2026 23:59 UTC and works for the first 50 uses. LAUNCH30 applies to single packs; the bundle is already discounted.
 
