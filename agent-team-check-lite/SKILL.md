@@ -4,7 +4,7 @@ description: Free health check for a team of AI agent sessions that share ORG.md
 license: MIT. LICENSE has complete terms.
 compatibility: Designed for Claude Code with several sessions; works with any agent that reads files. Needs python3 (3.8+). No network access.
 metadata:
-  version: "1.0.2"
+  version: "1.0.3"
   edition: "free"
 ---
 

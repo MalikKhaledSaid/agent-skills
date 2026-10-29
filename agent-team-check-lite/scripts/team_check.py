@@ -121,6 +121,8 @@ def check(folder, today=None, stale_days=7, human=""):
     humans = {b for b in external if b.lower() in HUMAN_WORDS or b.lower() == human.lower()}
     if not humans and external:
         humans = {max(external, key=lambda b: len(external[b]))}
+        add(INFO, "Assumed human", f"'{next(iter(humans))}' is not a role. It is treated as the human because most roles report to it.",
+            "If the human has another name, pass --human NAME.")
     for boss, who in external.items():
         if boss not in humans:
             add(ERROR, "Reporting line", f"{', '.join(who)} report(s) to unknown '{boss}'.", "Fix the name in ORG.md.")
