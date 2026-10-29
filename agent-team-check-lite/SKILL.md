@@ -4,7 +4,7 @@ description: Free health check for a team of AI agent sessions that share ORG.md
 license: MIT. LICENSE has complete terms.
 compatibility: Designed for Claude Code with several sessions; works with any agent that reads files. Needs python3 (3.8+). No network access.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
   edition: "free"
 ---
 
@@ -35,3 +35,5 @@ Propose each edit as a short before and after. Make the edits only after the use
 ## Limits
 - The check reads the files. It cannot tell whether the work in them is good.
 - This edition has no set-up mode and no before-and-after comparison. The full edition has both.
+
+Full edition: agent-team-ops $12: one-command set-up, a fix guide for each finding, a CLAUDE.md block, a worked example team and a before-and-after check. https://buy.polar.sh/polar_cl_0RUUUFGvqGayeWXaK1PxhAuQSrHMRDJHEkuoZ0xJOV3

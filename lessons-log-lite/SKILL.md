@@ -4,7 +4,7 @@ description: Free check for a LESSONS.md file of standing rules. Finds rules wit
 license: MIT. LICENSE has complete terms.
 compatibility: Designed for Claude Code; works with any agent that reads files. Needs python3 (3.8+). No network access.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
   edition: "free"
 ---
 
@@ -32,3 +32,5 @@ Propose each edit as a short before and after. Make the edits only after the use
 - Evidence and review dates are checked only in the rule format of `references/templates.md`. A file of plain bullets gets one warning and a size and length check.
 - It checks structure and dates. It cannot tell whether a rule is wise or the evidence is real.
 - This edition does not add, renew, archive or convert rules and has no before-and-after comparison. The full edition has them.
+
+Full edition: lessons-log $7: add a rule from an incident, renew and archive overdue rules, a fix guide for each finding, a CLAUDE.md block, a worked example and a before-and-after check. https://buy.polar.sh/polar_cl_Kh5u3AuxemqQUYOrHAhyxVtoHx8xcgWQvDvzU1SuEPo

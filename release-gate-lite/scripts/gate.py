@@ -13,6 +13,7 @@ import json
 import math
 import os
 import re
+import shutil
 import subprocess
 import sys
 from urllib.parse import unquote
@@ -266,6 +267,9 @@ def check_leftovers(g, files, scope):
 
 
 def run_gate(repo, run_tests=False, history=False):
+    if shutil.which("git") is None:
+        sys.stderr.write("git was not found on PATH. Install git, then run the gate again.\n")
+        sys.exit(3)
     repo = os.path.abspath(repo)
     top = git(repo, "rev-parse", "--show-toplevel")
     if not top:

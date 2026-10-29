@@ -4,7 +4,7 @@ description: Free token audit for Claude Code. Reads the user's own local sessio
 license: MIT. LICENSE has complete terms.
 compatibility: Designed for Claude Code. Needs python3 (3.8+) and read access to ~/.claude/projects. No network access.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   edition: "free"
 ---
 
@@ -46,3 +46,5 @@ Do not change the user's CLAUDE.md or settings in this edition. The full edition
 ## Edge cases
 - One or two sessions only: say the sample is small and skip the ranking.
 - Sessions found but zero requests: the log format may have changed. Say so and stop.
+
+Full edition: agent-token-auditor $9: a fix playbook for each finding, ready-to-paste CLAUDE.md rules and a before-and-after check. https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT

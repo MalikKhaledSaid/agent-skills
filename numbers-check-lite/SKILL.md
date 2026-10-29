@@ -4,7 +4,7 @@ description: Free check that every number in a Markdown report has a label (veri
 license: MIT. LICENSE has complete terms.
 compatibility: Designed for Claude Code; works with any agent that reads files. Needs python3 (3.8+). No network access.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
   edition: "free"
 ---
 
@@ -28,3 +28,5 @@ For each finding, ask how the user knows the number, then label it: `[V, source,
 - The scan reads Markdown. A number written as a word is not found.
 - It checks that a label, a source and a time are present. It cannot tell whether the source is real.
 - This edition does not re-fetch numbers and has no before-and-after comparison. The full edition has both.
+
+Full edition: numbers-check $9: re-fetch changing numbers with a command you give and compare them, a fix guide for each finding, a CLAUDE.md block, a worked example and a before-and-after check. https://buy.polar.sh/polar_cl_Ls5Jzr8nGz1CyxFFYtIKXRYPlFC9ZGks6mqeL1s1ujI

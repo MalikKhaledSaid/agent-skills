@@ -1,6 +1,6 @@
 {
   "name": "release-gate-lite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Free pre-release check for a git repository: secrets, version, changelog, merge markers, clean tree. One verdict: PASS, HOLD or FAIL.",
   "author": {
     "name": "Malik Said"

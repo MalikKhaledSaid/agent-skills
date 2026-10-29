@@ -1,6 +1,6 @@
 {
   "name": "agent-token-auditor-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shows where Claude Code tokens went, from your own local session logs. Free edition.",
   "author": {
     "name": "Malik Said"

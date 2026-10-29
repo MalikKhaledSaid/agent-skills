@@ -60,10 +60,15 @@ def parse_plan(text):
     return sections
 
 
+def title_start(title):
+    """A role title with its separator after the head turned into a space: 'COO: x', 'COO, x', 'COO - x' all start with 'coo '."""
+    return re.sub(r"\s*(?:[:,]|\s[-\u2013\u2014]\s)\s*", " ", title.lower().strip(), count=1)
+
+
 def find_section(sections, role):
     """A plan heading belongs to a role if it names the role, or is the start of its title."""
     name = role["name"].lower()
-    title = role.get("role", "").lower()
+    title = title_start(role.get("role", ""))
     for heading in sections:
         words = re.findall(r"[a-z0-9]+", heading)
         if name in words or heading == title:
@@ -104,8 +109,8 @@ def check(folder, today=None, stale_days=7, human=""):
         b = boss.strip().lower()
         if b in names:
             return b
-        hits = [n for n, r in names.items() if r.get("role", "").lower().split(" and ")[0].strip() == b
-                or r.get("role", "").lower().startswith(b + " ")]
+        hits = [n for n, r in names.items() if title_start(r.get("role", "")).split(" and ")[0].strip() == b
+                or title_start(r.get("role", "")).startswith(b + " ")]
         return hits[0] if len(hits) == 1 else None
 
     external = {}

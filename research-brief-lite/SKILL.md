@@ -4,7 +4,7 @@ description: Free check for a Markdown research brief. Finds a missing question,
 license: MIT. LICENSE has complete terms.
 compatibility: Designed for Claude Code; works with any agent that reads files. Needs python3 (3.8+). No network access.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   edition: "free"
 ---
 
@@ -32,3 +32,5 @@ ERROR for a missing question, budget, stop rule or findings, and for a claim wit
 - A file with no brief sections is read as research notes: every labelled line is checked for a source.
 - The check reads Markdown with level-2 headings. It cannot tell whether a source supports the claim.
 - This edition does not count searches against the budget, check dates or listed sources, or compare before and after. The full edition does.
+
+Full edition: research-brief $9: start a brief, log each search against the budget and stop when it is spent, checks for dates, listed sources and over-budget logs, a fix guide for each finding, a CLAUDE.md block, a worked example and a before-and-after check. https://buy.polar.sh/polar_cl_c3IMazGk7ocx6JpKwmUcGP8WPms58i1pAnAbz2QTI43
