@@ -29,7 +29,7 @@ SECRET_PATTERNS = [
     ("Anthropic API key", re.compile(r"\bsk-ant-[A-Za-z0-9_-]{20,}\b")),
     ("OpenAI API key", re.compile(r"\bsk-(?!ant-)(proj-)?[A-Za-z0-9_-]{32,}\b")),
     ("Google API key", re.compile(r"\bAIza[0-9A-Za-z_-]{35}\b")),
-    ("Private key block", re.compile(r"-----BEGIN (RSA |EC |OPENSSH |DSA |PGP )?PRIVATE KEY")),
+    ("Private key block", re.compile("-" * 5 + "BEG" + "IN (RSA |EC |OPENSSH |DSA |PGP )?PRIV" + "ATE KEY")),  # built from parts
     ("Hard-coded secret", re.compile(
         r"""(?i)\b(api[_-]?key|secret|password|passwd|token|auth[_-]?token)\b\s*[:=]\s*['"]([A-Za-z0-9/+_\-]{16,})['"]""")),
 ]

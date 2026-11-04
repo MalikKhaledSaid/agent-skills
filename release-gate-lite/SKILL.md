@@ -4,7 +4,7 @@ description: Free pre-release check for a git repository. Gives one verdict, PAS
 license: MIT. LICENSE has complete terms.
 compatibility: Needs python3 (3.8+) and git. Works with Claude Code and other agents that run shell commands. No network access.
 metadata:
-  version: "1.0.2"
+  version: "1.0.3"
   edition: "free"
 ---
 
