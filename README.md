@@ -6,7 +6,7 @@ Sample report from a real run on the author's own multi-agent workload, 26 Oct 2
 
 Want the fix playbook, ready-to-paste CLAUDE.md rules and a guided workflow too? [Get the full edition, agent-token-auditor ($9, one-time)](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT?utm_source=github&utm_medium=readme&utm_campaign=agent-token-auditor)
 
-Free Claude Code skills for agent work: check a release before you ship it, check the files of an agent team, and see where your tokens go. Each skill has a free edition here and a full edition on Polar. Everything runs locally, with no network access.
+Free Claude Code skills for agent work. Each of the six has a free edition here and a full edition on Polar. release-gate-lite gives one PASS, HOLD or FAIL verdict before you ship. agent-team-check-lite checks the files of an agent team. agent-token-auditor-lite shows where your tokens went. lessons-log-lite checks a file of standing rules. numbers-check-lite checks that every number in a report has a label, a source and a time. research-brief-lite checks a research brief for a question, a search budget and a stop rule. Everything runs locally, with no network access.
 
 Skills in this repo work with any agent that reads SKILL.md. The install line below is for Claude Code.
 
