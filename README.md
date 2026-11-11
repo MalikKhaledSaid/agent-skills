@@ -6,7 +6,7 @@ Sample report from a real run on the author's own multi-agent workload, 26 Oct 2
 
 Want the fix playbook, ready-to-paste CLAUDE.md rules and a guided workflow too? [Get the full edition, agent-token-auditor ($9, one-time)](https://buy.polar.sh/polar_cl_a3PsNiRzvZ4szsrbQS1eHOvKSEymZvFHIGegX0Q2rJT?utm_source=github&utm_medium=readme&utm_campaign=agent-token-auditor)
 
-Free Claude Code skills for agent work. Each of the six has a free edition here and a full edition on Polar. release-gate-lite gives one PASS, HOLD or FAIL verdict before you ship. agent-team-check-lite checks the files of an agent team. agent-token-auditor-lite shows where your tokens went. lessons-log-lite checks a file of standing rules. numbers-check-lite checks that every number in a report has a label, a source and a time. research-brief-lite checks a research brief for a question, a search budget and a stop rule. The scripts make no network calls of their own.
+Free Claude Code skills for agent work. Each of the eight has a free edition here and a full edition on Polar. release-gate-lite gives one PASS, HOLD or FAIL verdict before you ship. agent-team-check-lite checks the files of an agent team. agent-token-auditor-lite shows where your tokens went. lessons-log-lite checks a file of standing rules. numbers-check-lite checks that every number in a report has a label, a source and a time. research-brief-lite checks a research brief for a question, a search budget and a stop rule. cap-guard-lite checks an agent's spend against a cap and gives one verdict: OK, WARN or STOP. connector-lock-lite audits the connector and MCP servers in the settings and tool list you give it, and marks each one COVERED or OPEN. The scripts make no network calls of their own.
 
 Skills in this repo work with any agent that reads SKILL.md. The install line below is for Claude Code.
 
@@ -24,6 +24,10 @@ Skills in this repo work with any agent that reads SKILL.md. The install line be
 | numbers-check | Labels, sources and times for every number in a report, then re-checks the numbers that change with a command you list (MATCH or DIFFERENT). Fix guide and before-and-after check. | [$9 one-time](https://buy.polar.sh/polar_cl_Ls5Jzr8nGz1CyxFFYtIKXRYPlFC9ZGks6mqeL1s1ujI?utm_source=github&utm_medium=readme&utm_campaign=numbers-check) |
 | [research-brief-lite](research-brief-lite/) | Checks a research brief: a question, a search budget, a stop rule, a label on every claim, a source and a date on every verified claim. | Free, MIT |
 | research-brief | Sets the question, the search budget and the stop rule before the first search, logs each search and read, and refuses the next one when the budget is spent. Fix guide and before-and-after check. | [$9 one-time](https://buy.polar.sh/polar_cl_c3IMazGk7ocx6JpKwmUcGP8WPms58i1pAnAbz2QTI43?utm_source=github&utm_medium=readme&utm_campaign=research-brief) |
+| [cap-guard-lite](cap-guard-lite/) | Checks an agent's spend against a cap and gives one verdict: OK, WARN or STOP. | Free, MIT |
+| cap-guard | Adds a days-left forecast to the warn level and to the cap, burst days left out, the daily spend that lasts to the cycle end, a status file and a before-and-after check. | [$7 one-time](https://buy.polar.sh/polar_cl_Lb5HMDxvRd6RmWT9hUkX61Dc36Egqi7OnPCmi22BcKs?utm_source=github&utm_medium=readme&utm_campaign=cap-guard) |
+| [connector-lock-lite](connector-lock-lite/) | Audits the connector and MCP servers in the settings and tool list you give it: each server is COVERED or OPEN. | Free, MIT |
+| connector-lock | Adds a hook that blocks the servers you lock, a deny list written from a locks file by account, and a before-and-after check. | [$9 one-time](https://buy.polar.sh/polar_cl_qw3HAkiABUy617ASbmgPUT1tHn6e0iHKe2NTm0WgaR0?utm_source=github&utm_medium=readme&utm_campaign=connector-lock) |
 
 All three full editions together, [All 3 packs for $19](https://buy.polar.sh/polar_cl_8cJJ0eGKS6PHoRdUnaG8gmtfdKR5tpiC6P6y02oZMTC?utm_source=github&utm_medium=readme&utm_campaign=bundle) (bought separately: $28). The three are agent-token-auditor, release-gate and agent-team-ops.
 
@@ -42,6 +46,8 @@ As a Claude Code plugin, from inside Claude Code:
 /plugin install lessons-log-lite --marketplace MalikKhaledSaid/agent-skills
 /plugin install numbers-check-lite --marketplace MalikKhaledSaid/agent-skills
 /plugin install research-brief-lite --marketplace MalikKhaledSaid/agent-skills
+/plugin install cap-guard-lite --marketplace MalikKhaledSaid/agent-skills
+/plugin install connector-lock-lite --marketplace MalikKhaledSaid/agent-skills
 ```
 
 Or copy a skill folder into `~/.claude/skills/`.
