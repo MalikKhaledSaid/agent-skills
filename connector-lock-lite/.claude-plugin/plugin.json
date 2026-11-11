@@ -1,0 +1,15 @@
+{
+  "name": "connector-lock-lite",
+  "version": "1.0.0",
+  "description": "Free audit of which connector and MCP servers a Claude Code setup can reach and which a deny rule covers.",
+  "author": {
+    "name": "Malik Said"
+  },
+  "homepage": "https://github.com/MalikKhaledSaid/agent-skills",
+  "repository": "https://github.com/MalikKhaledSaid/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent-skills"
+  ]
+}

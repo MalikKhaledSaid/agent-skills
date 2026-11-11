@@ -1,0 +1,15 @@
+{
+  "name": "cap-guard-lite",
+  "version": "1.0.0",
+  "description": "Free check of an agent's spend against a cap: OK, WARN or STOP from a spend log.",
+  "author": {
+    "name": "Malik Said"
+  },
+  "homepage": "https://github.com/MalikKhaledSaid/agent-skills",
+  "repository": "https://github.com/MalikKhaledSaid/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent-skills"
+  ]
+}

@@ -34,6 +34,16 @@
       "name": "research-brief-lite",
       "source": "./research-brief-lite",
       "description": "Free check for a research brief: question, search budget, stop rule, a label on every claim, sources and dates."
+    },
+    {
+      "name": "cap-guard-lite",
+      "source": "./cap-guard-lite",
+      "description": "Free check of an agent's spend against a cap: spend so far, days left in the cycle and one verdict, OK, WARN or STOP."
+    },
+    {
+      "name": "connector-lock-lite",
+      "source": "./connector-lock-lite",
+      "description": "Free audit of the connector and MCP servers in your Claude Code settings: each server marked COVERED or OPEN."
     }
   ]
 }
